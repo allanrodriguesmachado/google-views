@@ -9,9 +9,7 @@ class Nps
 {
     public function getGoogleReviews()
     {
-        $placeId = 'ChIJr3c2Mpl7zpQR8mcjFLazeyY';
-        $apiKey = 'AIzaSyD6kH-qRmoGSK7CbIjfKnyMcZKij60cehM';
-        $url = "https://maps.googleapis.com/maps/api/place/details/json?place_id=$placeId&fields=reviews&key=$apiKey";
+        
 
         $response = file_get_contents($url);
         $data = json_decode($response, true);
